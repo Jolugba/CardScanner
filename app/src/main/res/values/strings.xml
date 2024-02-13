@@ -5,8 +5,9 @@
     <string name="get_card_input">Get Card Input</string>
     <string name="scan_atm">Scan ATM</string>
     <string name="get_card_detail">Get card detail</string>
-    <string name="card_type">Card Type:</string>
-    <string name="card_bank">Card Bank</string>
-    <string name="card_brand">Card Brand</string>
-    <string name="card_country">Card Country:</string>
+    <string name="card_type">Card Type: %1$s </string>
+    <string name="card_bank">Card Bank: %1$s </string>
+    <string name="card_brand">Card Brand: %1$s</string>
+    <string name="card_country">Card Country: %1$s</string>
+    <string name="enter_the_first_6_to_8_digit_of_your_atm_card">Enter the first 6 to 8 digit of your ATM card</string>
 </resources>

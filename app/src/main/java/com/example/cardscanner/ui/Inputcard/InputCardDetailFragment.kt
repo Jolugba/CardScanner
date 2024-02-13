@@ -16,8 +16,6 @@ import timber.log.Timber
 class InputCardDetailFragment : ViewBindingFragment<FragmentInputCardDetailBinding>() {
     private val viewModel: InputViewModel by viewModels()
 
-
-
     override val layoutId: Int
         get() = R.layout.fragment_input_card_detail
 

@@ -12,13 +12,6 @@ fun Fragment.launchFragment(direction: NavDirections) {
     findNavController().navigate(direction)
 }
 
-fun Fragment.popFragment() {
-    findNavController().popBackStack()
-}
-
-fun Fragment.navigateUp() {
-    findNavController().navigateUp()
-}
 
 fun Fragment.showLongSnackbar(message: String) {
     val snackbar = Snackbar.make(requireView(), message, Snackbar.LENGTH_LONG)
@@ -30,13 +23,5 @@ fun Fragment.showLongSnackbar(message: String) {
 }
 
 
-fun Fragment.showShortSnackbar(message: String) {
-    val snackbar = Snackbar.make(requireView(), message, Snackbar.LENGTH_SHORT)
-    val snackbarView: View = snackbar.view
-    val snackTextView: TextView =
-        snackbarView.findViewById(com.google.android.material.R.id.snackbar_text)
-    snackTextView.maxLines = 3
-    snackbar.show()
-}
 
 
