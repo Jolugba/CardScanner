@@ -7,9 +7,6 @@ import androidx.navigation.NavDirections
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
 
-fun Fragment.launchFragment(destination: Int) {
-    findNavController().navigate(destination)
-}
 
 fun Fragment.launchFragment(direction: NavDirections) {
     findNavController().navigate(direction)

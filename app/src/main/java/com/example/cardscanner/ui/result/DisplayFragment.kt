@@ -29,7 +29,6 @@ class DisplayFragment : ViewBindingFragment<FragmentDisplayBinding>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Timber.e(safeArgs.cardnumber)
-        Log.e("tag","${safeArgs.cardnumber}")
 
         with(binding) {
 

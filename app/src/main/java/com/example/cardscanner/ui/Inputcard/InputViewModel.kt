@@ -3,6 +3,7 @@ package com.example.cardscanner.ui.Inputcard
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.cardscanner.util.Constants.AppConstants.MINIMUM_CARD_NUMBER
 
 
 class InputViewModel :
@@ -16,7 +17,8 @@ class InputViewModel :
                _state.value = ViewState.ERROR("Card Number cannot be blank")
                 false
             }
-            number.length < 6  -> {
+            // this value is 6 because card number starts from 6
+            number.length < MINIMUM_CARD_NUMBER  -> {
                 _state.value = ViewState.ERROR("Card Number is incomplete")
                 false
             }
