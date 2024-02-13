@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/getCardDetailFragment">
+
+    <fragment
+        android:id="@+id/getCardDetailFragment"
+        android:name="com.example.cardscanner.ui.GetCardDetailFragment"
+        android:label="Get Card Detail"
+        tools:layout="@layout/fragment_get_card_detail" >
+        <action
+            android:id="@+id/go_to_inputCardDetailFragment"
+            app:destination="@id/inputCardDetailFragment" />
+        <action
+            android:id="@+id/go_to_scanCardFragment"
+            app:destination="@id/scanCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputCardDetailFragment"
+        android:name="com.example.cardscanner.ui.Inputcard.InputCardDetailFragment"
+        android:label="input Card Detail"
+        tools:layout="@layout/fragment_input_card_detail" >
+        <action
+            android:id="@+id/go_to_displayFragment"
+            app:destination="@id/displayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scanCardFragment"
+        android:name="com.example.cardscanner.ui.scancard.ScanCardFragment"
+        android:label="Scan Card"
+        tools:layout="@layout/fragment_scan_card" >
+        <action
+            android:id="@+id/action_scanCardFragment_to_displayFragment"
+            app:destination="@id/displayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/displayFragment"
+        android:name="com.example.cardscanner.ui.result.DisplayFragment"
+        android:label="fragment_display"
+        tools:layout="@layout/fragment_display" >
+        <argument
+            android:name="cardnumber"
+            app:argType="string" />
+    </fragment>
+</navigation>
