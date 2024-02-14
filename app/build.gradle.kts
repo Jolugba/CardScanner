@@ -80,7 +80,8 @@ dependencies {
     implementation ("com.google.dagger:hilt-android:$hilt_version")
     kapt ("com.google.dagger:hilt-compiler:$hilt_version")
     implementation ("com.jakewharton.timber:timber:5.0.1")
-
+    implementation ("com.google.android.gms:play-services-vision:20.1.3")
+    implementation("com.google.android.gms:play-services-gcm:17.0.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")

@@ -15,10 +15,10 @@ import com.example.cardscanner.ui.result.viewmodel.ResultViewModel
 import com.example.cardscanner.ui.result.viewmodel.UiState
 import com.example.cardscanner.util.hide
 import com.example.cardscanner.util.observe
+import com.example.cardscanner.util.popFragment
 import com.example.cardscanner.util.show
 import com.example.cardscanner.util.showLongSnackbar
 import dagger.hilt.android.AndroidEntryPoint
-import timber.log.Timber
 
 @AndroidEntryPoint
 class DisplayFragment : ViewBindingFragment<FragmentDisplayBinding>() {
@@ -38,7 +38,6 @@ class DisplayFragment : ViewBindingFragment<FragmentDisplayBinding>() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Timber.e(safeArgs.cardnumber)
         viewModel.fetchCardInfo(safeArgs.cardnumber)
           run()
     }
