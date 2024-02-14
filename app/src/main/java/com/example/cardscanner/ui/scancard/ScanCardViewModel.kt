@@ -3,8 +3,10 @@ package com.example.cardscanner.ui.scancard
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.example.cardscanner.ui.Inputcard.InputViewModel
 import com.example.cardscanner.util.Constants
+import kotlinx.coroutines.launch
 
 
 class ScanCardViewModel  :
@@ -33,11 +35,12 @@ class ScanCardViewModel  :
         }
     }
     fun getNumber(number: String) {
+        viewModelScope.launch {
         if (validateNumber(number)) {
             _state.value = InputViewModel.ViewState.SUCCESS(number)
 
         }
-    }
+    }}
 
 
 
