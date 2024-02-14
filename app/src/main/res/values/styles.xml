@@ -8,4 +8,8 @@
         <item name="android:layout_marginStart">@dimen/dp_16</item>
         <item name="android:layout_marginEnd">@dimen/dp_16</item>
     </style>
+    <style name="dialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="colorAccent">@color/purple</item>
+        <item name="colorPrimary">@color/purple</item>
+    </style>
 </resources>

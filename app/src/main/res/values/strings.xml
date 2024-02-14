@@ -10,4 +10,8 @@
     <string name="card_brand">Card Brand: %1$s</string>
     <string name="card_country">Card Country: %1$s</string>
     <string name="enter_the_first_6_to_8_digit_of_your_atm_card">Enter the first 6 to 8 digit of your ATM card</string>
+    <string name="focus_the_camera_above_card_when_a_valid_number_is_detected_the_button_will_activate">Focus the camera above card. When a valid number is detected, the button will activate</string>
+    <string name="text_ok">Ok</string>
+    <string name="text_camera_permission">Camera permission</string>
+    <string name="text_camera_permission_rationale">Camera is required for the smooth functioning of this application</string>
 </resources>
