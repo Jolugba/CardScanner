@@ -32,7 +32,7 @@
         android:label="Scan Card"
         tools:layout="@layout/fragment_scan_card" >
         <action
-            android:id="@+id/action_scanCardFragment_to_displayFragment"
+            android:id="@+id/go_to_displayFragment"
             app:destination="@id/displayFragment" />
     </fragment>
     <fragment

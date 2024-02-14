@@ -17,7 +17,7 @@ class InputViewModel :
                _state.value = ViewState.ERROR("Card Number cannot be blank")
                 false
             }
-            // this value is 6 because card number starts from 6
+            // this value is 6 because card number acc starts from 6
             number.length < MINIMUM_CARD_NUMBER  -> {
                 _state.value = ViewState.ERROR("Card Number is incomplete")
                 false
