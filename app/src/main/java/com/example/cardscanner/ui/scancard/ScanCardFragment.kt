@@ -83,7 +83,7 @@ class ScanCardFragment : ViewBindingFragment<FragmentScanCardBinding>() {
                 try {
                     cameraSource.start(surfaceView.holder)
                 } catch (e: IOException) {
-                    Timber.e("$e")
+                    Timber.e("hhhhhh$e")
                     e.printStackTrace()
                 }
             }

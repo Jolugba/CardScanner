@@ -4,6 +4,7 @@ plugins {
     kotlin("kapt")
     id("androidx.navigation.safeargs")
     id("dagger.hilt.android.plugin")
+
 }
 
 android {
@@ -81,6 +82,7 @@ dependencies {
     kapt ("com.google.dagger:hilt-compiler:$hilt_version")
     implementation ("com.jakewharton.timber:timber:5.0.1")
     implementation ("com.google.android.gms:play-services-vision:20.1.3")
+    implementation ("com.google.android.gms:play-services-mlkit-text-recognition:19.0.0")
     implementation("com.google.android.gms:play-services-gcm:17.0.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
